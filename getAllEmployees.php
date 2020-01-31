@@ -22,7 +22,7 @@ while( $row = sqlsrv_fetch_array( $stmt2, SQLSRV_FETCH_ASSOC) ) {
 }
 echo json_encode($temp);
 }else{
-	echo "No Record Exists...";
+	echo "Selected Item Not Exits...Please Choose Other Items...";
 }
 sqlsrv_close($conn);
 }else{
